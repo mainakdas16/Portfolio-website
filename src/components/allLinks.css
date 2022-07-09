@@ -1,0 +1,39 @@
+.al {
+    padding: 50px 100px;
+    display: flex;
+    /* align-items: center; */
+    text-align: left;
+    flex-direction: column;
+    background-color: rgb(25, 26, 25);
+    box-shadow: 2px;
+}
+
+.al-title {
+    font-size: 40px;
+    color: rgb(12, 35, 239);
+    margin: 10px;
+}
+
+.al-title:hover{
+    color: aliceblue;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+    .links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .al-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
