@@ -81,6 +81,12 @@
     }
 }
 
+@media screen and (max-height: 475px) {
+    .a-card {
+        display: none;
+    }
+}
+
 a {
     color: blue;
     text-decoration: none;
