@@ -81,7 +81,7 @@
     }
 }
 
-@media screen and (max-height: 475px) {
+@media screen and (max-height: 475px)  and (max-width:480px){
     .a-card {
         display: none;
     }
