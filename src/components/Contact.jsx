@@ -7,9 +7,17 @@ function Contact() {
     const formRef = useRef();
     const [done, setDone] = useState(false);
     const [value, setValue] = useState('');
+    const [value1, setValue1] = useState('');
+    const [value2, setValue2] = useState('');
 
     const handleChange = (event) => {
         setValue(event.target.value);
+    }
+    const handleChange1 = (event) => {
+        setValue1(event.target.value);
+    }
+    const handleChange2 = (event) => {
+        setValue2(event.target.value);
     }
 
     const handleSubmit = (e) => {
@@ -58,10 +66,10 @@ function Contact() {
                     </p>
                     <form ref={formRef} onSubmit = {handleSubmit}>
                         <input type="text" placeholder='username' name='user_name' value={value} onChange={handleChange}/>
-                        <input type="text" placeholder='Subject' name='user_subject' value={value} onChange={handleChange}/>
-                        <input type="text" placeholder='Email' name='user_email' value={value} onChange={handleChange}/>
+                        <input type="text" placeholder='Subject' name='user_subject' value={value1} onChange={handleChange1}/>
+                        <input type="text" placeholder='Email' name='user_email' value={value2} onChange={handleChange2}/>
                         <textarea name="message" rows="5" placeholder='message'></textarea>
-                        <button type="submit" disabled={!value}>Submit</button>
+                        <button type="submit" disabled={!value1 || !value2 || !value}>Submit</button>
                         {done && "Thank You..."}
                     </form>
                 </div>
