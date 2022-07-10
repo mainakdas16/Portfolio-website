@@ -90,9 +90,16 @@ button:hover {
 }
 
 @media screen and (max-width: 480px) {
+    .c {
+        height: 100%;
+    }
     .c-wrapper {
         flex-direction: column;
         padding: 0px 50px;
+    }
+
+    .c-right {
+        height: 100%;
     }
 
     .c-title {
@@ -110,6 +117,7 @@ button:hover {
 
     form {
         margin: 0px;
+        height: 100%;
     }
 
     input {
