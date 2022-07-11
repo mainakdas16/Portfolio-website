@@ -1,5 +1,10 @@
 # Getting Started with Create React App
 
+## 
+This website is currently hosted at https://mainakdas16.github.io/portfolio-website/
+##
+This hosting was done using github pages.
+
 ## Available Scripts
 
 In the project directory, you can run:
